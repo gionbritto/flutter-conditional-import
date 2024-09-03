@@ -3,7 +3,12 @@ import 'package:webinflutterapp/platform_alerts/custom_platform.dart';
 import 'package:webinflutterapp/platform_webview/custom_platform_webview.dart';
 import 'package:webinflutterapp/sobre_nos_mobile.dart';
 
-// https://github.com/Ajaykamble/flutter_conditional_importing?source=post_page-----5d7b6bff689c--------------------------------
+/*
+Tutorial utilizado:
+https://medium.com/techskool/adding-conditional-imports-in-flutter-for-cross-platform-development-5d7b6bff689c
+Link to github do tutorial:
+https://github.com/Ajaykamble/flutter_conditional_importing?source=post_page-----5d7b6bff689c--------------------------------
+ */
 void main() {
   //necessário
   WidgetsFlutterBinding.ensureInitialized();
@@ -66,15 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Text("Show Alert"),
               ),
             ),
-            // TextButton(
-            //   onPressed: () {
-            //     Navigator.push(
-            //         context,
-            //         MaterialPageRoute(
-            //             builder: (context) => const SobreNosWeb()));
-            //   },
-            //   child: const Text("WebView Web"),
-            // ),
             TextButton(
               onPressed: () {
                 Navigator.push(context,
